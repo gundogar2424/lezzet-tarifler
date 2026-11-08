@@ -1,1 +1,19 @@
-[]
+[
+ {
+  "dosya": "t/kedidili-tiramisu-424.html",
+  "ad": "Kedidili Tiramisu",
+  "aciklama": "Malzemeler toplam ~2,1 kg: ısıtılan tarifte hazneye en fazla 2 L konur. Kremayı/çorbayı iki partide pişir. Krema piştikten sonra sıcakken kesinlikle labne peyni",
+  "kategori": "Sütlü Tatlı",
+  "etiketler": [
+   "Thermomix",
+   "Tatlı",
+   "Pratik"
+  ],
+  "porsiyon": "8 porsiyon",
+  "sure": 30,
+  "yazar": "Sevde Nur Kaya",
+  "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ }
+]
