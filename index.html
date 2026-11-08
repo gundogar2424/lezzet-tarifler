@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lezzet Rotası Tarifleri</title>
+<meta name="description" content="Denenmiş tarifler ve Thermomix uyarlamaları. Malzemeler, adım adım hazırlanış, cihaz ayarları.">
+<link rel="canonical" href="https://gundogar2424.github.io/lezzet-tarifler/">
+<meta property="og:title" content="Lezzet Rotası Tarifleri">
+<meta property="og:description" content="Denenmiş tarifler ve Thermomix uyarlamaları.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Lezzet Rotası Tarifleri","url":"https://gundogar2424.github.io/lezzet-tarifler/","inLanguage":"tr"}</script>
+<style>
+:root{--bg:#fffaf5;--kart:#fff;--yazi:#1f1a17;--soluk:#7a6f68;--vurgu:#d9480f;--cizgi:#efe3d8;--rozet:#fdebd3}
+@media(prefers-color-scheme:dark){:root{--bg:#161210;--kart:#211b18;--yazi:#f4ece6;--soluk:#a89b92;--vurgu:#ff8a4c;--cizgi:#342b26;--rozet:#3a2a1e}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--yazi);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+header{padding:28px 16px 12px;max-width:960px;margin:0 auto}
+h1{margin:0;font-size:28px;letter-spacing:-.02em}
+h1 span{color:var(--vurgu)}
+.alt{color:var(--soluk);margin:4px 0 0;font-size:15px}
+main{max-width:960px;margin:0 auto;padding:0 16px 48px}
+.arama{width:100%;padding:12px 14px;border:1px solid var(--cizgi);border-radius:12px;background:var(--kart);color:var(--yazi);font-size:16px;margin:12px 0 10px;outline:none}
+.arama:focus{border-color:var(--vurgu)}
+.sekmeler{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
+.sekmeler::-webkit-scrollbar{display:none}
+.sekme{flex:none;padding:6px 12px;border-radius:999px;border:1px solid var(--cizgi);background:var(--kart);color:var(--yazi);font-size:14px;cursor:pointer}
+.sekme.secili{background:var(--vurgu);border-color:var(--vurgu);color:#fff}
+.sayi{color:var(--soluk);font-size:13px;margin:8px 0 12px}
+.liste{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.kart{display:block;background:var(--kart);border:1px solid var(--cizgi);border-radius:16px;padding:14px 16px;color:inherit;text-decoration:none;transition:transform .12s,border-color .12s}
+.kart:hover{transform:translateY(-2px);border-color:var(--vurgu)}
+.kart h2{margin:0 0 4px;font-size:17px;line-height:1.3}
+.kart p{margin:0;color:var(--soluk);font-size:14px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.rozetler{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.rozet{font-size:12px;padding:2px 8px;border-radius:999px;background:var(--rozet);color:var(--vurgu);font-weight:600}
+.rozet.gri{background:transparent;border:1px solid var(--cizgi);color:var(--soluk);font-weight:400}
+.bos{text-align:center;color:var(--soluk);padding:48px 16px}
+footer{text-align:center;color:var(--soluk);font-size:13px;padding:24px 16px;border-top:1px solid var(--cizgi)}
+footer a{color:inherit}
+</style>
+</head>
+<body>
+<header>
+  <h1>Lezzet <span>Rotası</span></h1>
+  <p class="alt">Denenmiş tarifler ve Thermomix uyarlamaları</p>
+</header>
+<main>
+  <input class="arama" id="arama" type="search" placeholder="Tarif ara: tiramisu, çorba, tavuk…" autocomplete="off">
+  <div class="sekmeler" id="sekmeler"></div>
+  <div class="sayi" id="sayi"></div>
+  <div class="liste" id="liste"></div>
+  <div class="bos" id="bos" hidden>Henüz tarif yok. Uygulamadan “Siteye koy” deyince burada görünür.</div>
+</main>
+<footer>Lezzet Rotası uygulamasıyla hazırlandı · <a href="sitemap.xml">Site haritası</a></footer>
+<script>
+(async () => {
+  const sade = (s) => String(s || '').toLocaleLowerCase('tr').replace(/[çğıöşü]/g, (c) => ({ ç: 'c', ğ: 'g', ı: 'i', ö: 'o', ş: 's', ü: 'u' })[c])
+  let tarifler = []
+  try { tarifler = await (await fetch('tarifler.json?' + Date.now())).json() } catch {}
+  const liste = document.getElementById('liste'), bos = document.getElementById('bos'), sayi = document.getElementById('sayi')
+  const sekmeler = document.getElementById('sekmeler'), arama = document.getElementById('arama')
+  const kategoriler = [...new Set(tarifler.map((t) => t.kategori).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'tr'))
+  let secili = 'Tümü', sadeceTm = false
+  const butonlar = ['Tümü', 'Thermomix', ...kategoriler]
+  sekmeler.innerHTML = butonlar.map((k) => `<button class="sekme" data-k="${k}">${k}</button>`).join('')
+  sekmeler.onclick = (e) => { const b = e.target.closest('.sekme'); if (!b) return; secili = b.dataset.k; ciz() }
+  arama.oninput = ciz
+  function ciz() {
+    const q = sade(arama.value.trim())
+    for (const b of sekmeler.children) b.classList.toggle('secili', b.dataset.k === secili)
+    const g = tarifler.filter((t) =>
+      (secili === 'Tümü' || (secili === 'Thermomix' ? t.thermomix : t.kategori === secili)) &&
+      (!q || sade(t.ad + ' ' + t.etiketler.join(' ') + ' ' + t.aciklama).includes(q)))
+    liste.innerHTML = g.map((t) => `<a class="kart" href="${t.dosya}">
+      <h2>${t.ad}</h2><p>${t.aciklama || ''}</p>
+      <div class="rozetler">${t.thermomix ? '<span class="rozet">Thermomix</span>' : ''}${t.kategori ? `<span class="rozet gri">${t.kategori}</span>` : ''}${t.sure ? `<span class="rozet gri">${t.sure} dk</span>` : ''}${t.porsiyon ? `<span class="rozet gri">${t.porsiyon}</span>` : ''}</div></a>`).join('')
+    bos.hidden = g.length > 0
+    bos.textContent = tarifler.length ? 'Aramana uyan tarif yok.' : 'Henüz tarif yok. Uygulamadan “Siteye koy” deyince burada görünür.'
+    sayi.textContent = tarifler.length ? `${g.length} tarif` : ''
+  }
+  ciz()
+})()
+</script>
+</body>
+</html>
