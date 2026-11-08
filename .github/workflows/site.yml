@@ -1,21 +1,17 @@
-name: Siteyi yayınla
+name: Tarif listesini güncelle
 on:
   push:
     branches: [main]
+    paths: ['t/**', 'scripts/**', 'index.html']
   workflow_dispatch:
 permissions:
   contents: write
-  pages: write
-  id-token: write
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: derle
+  cancel-in-progress: true
 jobs:
   derle:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.yayin.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -29,11 +25,3 @@ jobs:
           git config user.email "lezzet-bot@users.noreply.github.com"
           git add tarifler.json sitemap.xml
           git diff --cached --quiet || (git commit -m "Tarif listesi güncellendi" && git push)
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: .
-      - id: yayin
-        uses: actions/deploy-pages@v4
