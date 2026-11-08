@@ -1,5 +1,201 @@
 [
  {
+  "dosya": "t/calakasik-tatlisi-331.html",
+  "ad": "Çalakaşık Tatlısı",
+  "aciklama": "Çalakaşık Tatlısı tarifi: 9 malzeme, 8 adımda hazırlanış, Thermomix ayarlarıyla. 12 porsiyon.",
+  "kategori": "Sütlü Tatlı",
+  "etiketler": [
+   "Thermomix",
+   "Tatlı",
+   "Pratik"
+  ],
+  "porsiyon": "12 porsiyon",
+  "sure": 170,
+  "yazar": "Refika'nın Mutfağı",
+  "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/citir-firin-patates-salatasi-24.html",
+  "ad": "Çıtır Fırın Patates Salatası",
+  "aciklama": "Çıtır Fırın Patates Salatası tarifi: 12 malzeme, 7 adımda hazırlanış, Thermomix ayarlarıyla. 4 porsiyon.",
+  "kategori": "Meze & Salata",
+  "etiketler": [
+   "Thermomix",
+   "Salata",
+   "Aperatif",
+   "Sağlıklı"
+  ],
+  "porsiyon": "4 porsiyon",
+  "sure": 35,
+  "yazar": "Ahmad Noori",
+  "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/firinda-citir-tavuk-238.html",
+  "ad": "Fırında Çıtır Tavuk",
+  "aciklama": "Fırında Çıtır Tavuk tarifi: 7 malzeme, 5 adımda hazırlanış, Thermomix ayarlarıyla.",
+  "kategori": "Tavuk & Balık",
+  "etiketler": [
+   "Thermomix",
+   "Ana Yemek",
+   "Pratik",
+   "Sağlıklı"
+  ],
+  "porsiyon": "",
+  "sure": 30,
+  "yazar": "@cerensahinn48",
+  "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/firinda-patlicanli-durum-sandvic-8.html",
+  "ad": "Fırında Patlıcanlı Dürüm Sandviç",
+  "aciklama": "Fırında Patlıcanlı Dürüm Sandviç tarifi: 10 malzeme, 5 adımda hazırlanış. 2 porsiyon.",
+  "kategori": "Sağlıklı",
+  "etiketler": [
+   "Sağlıklı",
+   "Pratik",
+   "Aperatif",
+   "Keto"
+  ],
+  "porsiyon": "2 porsiyon",
+  "sure": 40,
+  "yazar": "SHREDHAPPENS",
+  "thermomix": false,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/firinda-sebzeli-kahvaltilik-omlet-7.html",
+  "ad": "Fırında Sebzeli Kahvaltılık Omlet",
+  "aciklama": "Fırında Sebzeli Kahvaltılık Omlet tarifi: 8 malzeme, 4 adımda hazırlanış. 4 porsiyon.",
+  "kategori": "Kahvaltılık",
+  "etiketler": [
+   "Kahvaltılık",
+   "Sağlıklı",
+   "Pratik"
+  ],
+  "porsiyon": "4 porsiyon",
+  "sure": 30,
+  "yazar": "MattsFitChef",
+  "thermomix": false,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/firinda-soslu-tavuk-meal-prep-menusu-61.html",
+  "ad": "Fırında Soslu Tavuk (Meal Prep Menüsü)",
+  "aciklama": "Fırında Soslu Tavuk (Meal Prep Menüsü) tarifi: 11 malzeme, 4 adımda hazırlanış, Thermomix ayarlarıyla. 4 porsiyon.",
+  "kategori": "Tavuk & Balık",
+  "etiketler": [
+   "Thermomix",
+   "Ana Yemek",
+   "Sağlıklı",
+   "Pratik"
+  ],
+  "porsiyon": "4 porsiyon",
+  "sure": 40,
+  "yazar": "Sadık Kılıç",
+  "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/firinda-unsuz-sebzeli-wrap-10.html",
+  "ad": "Fırında Unsuz Sebzeli Wrap",
+  "aciklama": "Fırında Unsuz Sebzeli Wrap tarifi: 7 malzeme, 5 adımda hazırlanış. 2 porsiyon.",
+  "kategori": "Sağlıklı",
+  "etiketler": [
+   "Sağlıklı",
+   "Pratik",
+   "Kahvaltılık",
+   "Keto",
+   "Fittarif"
+  ],
+  "porsiyon": "2 porsiyon",
+  "sure": 35,
+  "yazar": "whatieatclean",
+  "thermomix": false,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/firinsiz-findikli-cikolatali-cheesecake-240.html",
+  "ad": "Fırınsız Fındıklı Çikolatalı Cheesecake",
+  "aciklama": "Fırınsız Fındıklı Çikolatalı Cheesecake tarifi: 10 malzeme, 10 adımda hazırlanış, Thermomix ayarlarıyla. 8 porsiyon.",
+  "kategori": "Dondurma & Soğuk Tatlı",
+  "etiketler": [
+   "Thermomix",
+   "Tatlı",
+   "Pratik"
+  ],
+  "porsiyon": "8 porsiyon",
+  "sure": 360,
+  "yazar": "@mutfakmekanim",
+  "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/fit-kumburger-6.html",
+  "ad": "Fit Kumburger",
+  "aciklama": "Fit Kumburger tarifi: 10 malzeme, 7 adımda hazırlanış, Thermomix ayarlarıyla. 2 porsiyon.",
+  "kategori": "Ana Yemek",
+  "etiketler": [
+   "Thermomix",
+   "Sağlıklı",
+   "Pratik",
+   "Aperatif",
+   "Fittarif"
+  ],
+  "porsiyon": "2 porsiyon",
+  "sure": 30,
+  "yazar": "Lezzet Rotası",
+  "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/fit-protein-bowl-5.html",
+  "ad": "Fit Protein Bowl",
+  "aciklama": "Fit Protein Bowl tarifi: 11 malzeme, 4 adımda hazırlanış. 1 porsiyon.",
+  "kategori": "Sağlıklı",
+  "etiketler": [
+   "Sağlıklı",
+   "Pratik",
+   "Ana Yemek"
+  ],
+  "porsiyon": "1 porsiyon",
+  "sure": 25,
+  "yazar": "Lezzet Rotası",
+  "thermomix": false,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/insulin-direncine-uygun-3-pratik-firin-t-9.html",
+  "ad": "İnsülin Direncine Uygun 3 Pratik Fırın Tatlısı",
+  "aciklama": "İnsülin Direncine Uygun 3 Pratik Fırın Tatlısı tarifi: 18 malzeme, 5 adımda hazırlanış. 3 porsiyon.",
+  "kategori": "Tatlı",
+  "etiketler": [
+   "Tatlı",
+   "Sağlıklı",
+   "Pratik",
+   "Fittarif"
+  ],
+  "porsiyon": "3 porsiyon",
+  "sure": 25,
+  "yazar": "Lezzet Rotası",
+  "thermomix": false,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
   "dosya": "t/kedidili-tiramisu-424.html",
   "ad": "Kedidili Tiramisu",
   "aciklama": "Kedidili Tiramisu tarifi: 14 malzeme, 12 adımda hazırlanış, Thermomix ayarlarıyla. 8 porsiyon.",
@@ -13,6 +209,186 @@
   "sure": 30,
   "yazar": "Sevde Nur Kaya",
   "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/krem-karamel-115.html",
+  "ad": "Krem Karamel",
+  "aciklama": "Krem Karamel tarifi: 8 malzeme, 7 adımda hazırlanış, Thermomix ayarlarıyla.",
+  "kategori": "Sütlü Tatlı",
+  "etiketler": [
+   "Thermomix",
+   "Tatlı",
+   "Pratik"
+  ],
+  "porsiyon": "",
+  "sure": 55,
+  "yazar": "Sadık Kılıç",
+  "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/protein-pizza-4.html",
+  "ad": "Protein Pizza",
+  "aciklama": "Protein Pizza tarifi: 4 malzeme, 5 adımda hazırlanış. 1 porsiyon.",
+  "kategori": "Sağlıklı",
+  "etiketler": [
+   "Sağlıklı",
+   "Pratik",
+   "Kahvaltılık",
+   "Fittarif"
+  ],
+  "porsiyon": "1 porsiyon",
+  "sure": 20,
+  "yazar": "Lezzet Rotası",
+  "thermomix": false,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/saglikli-brownie-tariflerinin-en-iyisiar-2.html",
+  "ad": "Saglikli brownie tariflerinin en iyisiAra ogunlerde kahve yaninda bayi",
+  "aciklama": "Saglikli brownie tariflerinin en iyisiAra ogunlerde kahve yaninda bayi tarifi: 4 malzeme, 2 adımda hazırlanış.",
+  "kategori": "",
+  "etiketler": [],
+  "porsiyon": "",
+  "sure": 20,
+  "yazar": "Lezzet Rotası",
+  "thermomix": false,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/san-sabastian-412.html",
+  "ad": "San sabastian",
+  "aciklama": "San sabastian tarifi: 5 malzeme, 5 adımda hazırlanış, Thermomix ayarlarıyla.",
+  "kategori": "Pasta",
+  "etiketler": [
+   "Thermomix"
+  ],
+  "porsiyon": "",
+  "sure": 0,
+  "yazar": "Lezzet Rotası",
+  "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/sarimsakli-parmesanli-citir-tavuklu-duru-12.html",
+  "ad": "Sarımsaklı Parmesanlı Çıtır Tavuklu Dürüm",
+  "aciklama": "Sarımsaklı Parmesanlı Çıtır Tavuklu Dürüm tarifi: 23 malzeme, 7 adımda hazırlanış. 10 porsiyon.",
+  "kategori": "Ana Yemek",
+  "etiketler": [
+   "Ana Yemek",
+   "Akşam Yemeği",
+   "Sağlıklı",
+   "Keto"
+  ],
+  "porsiyon": "10 porsiyon",
+  "sure": 35,
+  "yazar": "Jalalsamfit",
+  "thermomix": false,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/supangleli-tavuk-gogsu-330.html",
+  "ad": "Supangleli Tavuk Göğsü",
+  "aciklama": "Supangleli Tavuk Göğsü tarifi: 12 malzeme, 9 adımda hazırlanış, Thermomix ayarlarıyla. 6 porsiyon.",
+  "kategori": "Sütlü Tatlı",
+  "etiketler": [
+   "Thermomix",
+   "Tatlı",
+   "Pratik"
+  ],
+  "porsiyon": "6 porsiyon",
+  "sure": 45,
+  "yazar": "@zeyneki",
+  "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/tavuklu-ve-patatesli-salata-kasesi-1.html",
+  "ad": "Tavuklu ve Patatesli Salata Kasesi",
+  "aciklama": "Tavuklu ve Patatesli Salata Kasesi tarifi: 13 malzeme, 5 adımda hazırlanış. 1 porsiyon.",
+  "kategori": "Salata",
+  "etiketler": [
+   "Salata",
+   "Sağlıklı",
+   "Pratik"
+  ],
+  "porsiyon": "1 porsiyon",
+  "sure": 30,
+  "yazar": "Lezzet Rotası",
+  "thermomix": false,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/tiramisu-222.html",
+  "ad": "Tiramisu",
+  "aciklama": "Tiramisu tarifi: 8 malzeme, 5 adımda hazırlanış, Thermomix ayarlarıyla.",
+  "kategori": "Pasta",
+  "etiketler": [
+   "Thermomix",
+   "Tatlı"
+  ],
+  "porsiyon": "",
+  "sure": 420,
+  "yazar": "@zeyyskitchenn",
+  "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/tiramis-italiano-390.html",
+  "ad": "Tiramisù Italiano",
+  "aciklama": "Tiramisù Italiano tarifi: 7 malzeme, 5 adımda hazırlanış, Thermomix ayarlarıyla. 8 porsiyon.",
+  "kategori": "Dondurma & Soğuk Tatlı",
+  "etiketler": [
+   "Thermomix",
+   "Postres y dulces"
+  ],
+  "porsiyon": "8 porsiyon",
+  "sure": 340,
+  "yazar": "Vorwerk Home & Co. KmG",
+  "thermomix": true,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/un-kullanmadan-sadece-2-malzeme-ile-prot-3.html",
+  "ad": "Un kullanmadan sadece 2 malzeme ile protein bombası bir sandviç yapalı",
+  "aciklama": "Un kullanmadan sadece 2 malzeme ile protein bombası bir sandviç yapalı tarifi: 2 malzeme, 3 adımda hazırlanış.",
+  "kategori": "Fittarif",
+  "etiketler": [
+   "Fittarif"
+  ],
+  "porsiyon": "",
+  "sure": 14,
+  "yazar": "Lezzet Rotası",
+  "thermomix": false,
+  "gorsel": "",
+  "tarih": "2026-11-08"
+ },
+ {
+  "dosya": "t/unsuz-sarimsakli-ve-peynirli-patates-ekm-11.html",
+  "ad": "Unsuz Sarımsaklı ve Peynirli Patates Ekmeği",
+  "aciklama": "Unsuz Sarımsaklı ve Peynirli Patates Ekmeği tarifi: 5 malzeme, 5 adımda hazırlanış.",
+  "kategori": "Aperatif",
+  "etiketler": [
+   "Aperatif",
+   "Pratik",
+   "Keto",
+   "Fittarif"
+  ],
+  "porsiyon": "",
+  "sure": 40,
+  "yazar": "Quick Bite Lab",
+  "thermomix": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  }
