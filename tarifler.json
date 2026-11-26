@@ -13,6 +13,7 @@
   "sure": 170,
   "yazar": "Refika'nın Mutfağı",
   "thermomix": true,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -31,6 +32,7 @@
   "sure": 35,
   "yazar": "Ahmad Noori",
   "thermomix": true,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -49,6 +51,7 @@
   "sure": 30,
   "yazar": "@cerensahinn48",
   "thermomix": true,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -67,6 +70,7 @@
   "sure": 40,
   "yazar": "SHREDHAPPENS",
   "thermomix": false,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -84,6 +88,7 @@
   "sure": 30,
   "yazar": "MattsFitChef",
   "thermomix": false,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -102,6 +107,7 @@
   "sure": 40,
   "yazar": "Sadık Kılıç",
   "thermomix": true,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -121,6 +127,7 @@
   "sure": 35,
   "yazar": "whatieatclean",
   "thermomix": false,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -138,6 +145,7 @@
   "sure": 360,
   "yazar": "@mutfakmekanim",
   "thermomix": true,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -157,6 +165,7 @@
   "sure": 30,
   "yazar": "Lezzet Rotası",
   "thermomix": true,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -174,6 +183,7 @@
   "sure": 25,
   "yazar": "Lezzet Rotası",
   "thermomix": false,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -192,6 +202,7 @@
   "sure": 25,
   "yazar": "Lezzet Rotası",
   "thermomix": false,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -209,6 +220,7 @@
   "sure": 30,
   "yazar": "Sevde Nur Kaya",
   "thermomix": true,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -226,6 +238,7 @@
   "sure": 55,
   "yazar": "Sadık Kılıç",
   "thermomix": true,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -244,6 +257,7 @@
   "sure": 20,
   "yazar": "Lezzet Rotası",
   "thermomix": false,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -257,6 +271,7 @@
   "sure": 20,
   "yazar": "Lezzet Rotası",
   "thermomix": false,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -272,6 +287,7 @@
   "sure": 0,
   "yazar": "Lezzet Rotası",
   "thermomix": true,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -290,6 +306,7 @@
   "sure": 35,
   "yazar": "Jalalsamfit",
   "thermomix": false,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -307,6 +324,7 @@
   "sure": 45,
   "yazar": "@zeyneki",
   "thermomix": true,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -324,6 +342,7 @@
   "sure": 30,
   "yazar": "Lezzet Rotası",
   "thermomix": false,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -340,6 +359,7 @@
   "sure": 420,
   "yazar": "@zeyyskitchenn",
   "thermomix": true,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -356,6 +376,7 @@
   "sure": 340,
   "yazar": "Vorwerk Home & Co. KmG",
   "thermomix": true,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -371,6 +392,7 @@
   "sure": 14,
   "yazar": "Lezzet Rotası",
   "thermomix": false,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  },
@@ -389,6 +411,7 @@
   "sure": 40,
   "yazar": "Quick Bite Lab",
   "thermomix": false,
+  "pisirici": false,
   "gorsel": "",
   "tarih": "2026-11-08"
  }

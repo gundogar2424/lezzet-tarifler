@@ -24,7 +24,7 @@ main{max-width:960px;margin:0 auto;padding:0 16px 48px}
 .arama:focus{border-color:var(--vurgu)}
 .sekmeler{display:flex;gap:8px;overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
 .sekmeler::-webkit-scrollbar{display:none}
-.sekme{flex:none;padding:6px 12px;border-radius:999px;border:1px solid var(--cizgi);background:var(--kart);color:var(--yazi);font-size:14px;cursor:pointer}
+.sekme{flex:none;min-height:44px;padding:6px 14px;border-radius:999px;border:1px solid var(--cizgi);background:var(--kart);color:var(--yazi);font-size:14px;cursor:pointer}
 .sekme.secili{background:var(--vurgu);border-color:var(--vurgu);color:#fff}
 .sayi{color:var(--soluk);font-size:13px;margin:8px 0 12px}
 .liste{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
@@ -62,7 +62,7 @@ footer a{color:inherit}
   const sekmeler = document.getElementById('sekmeler'), arama = document.getElementById('arama')
   const kategoriler = [...new Set(tarifler.map((t) => t.kategori).filter(Boolean))].sort((a, b) => a.localeCompare(b, 'tr'))
   let secili = 'Tümü', sadeceTm = false
-  const butonlar = ['Tümü', 'Thermomix', ...kategoriler]
+  const butonlar = ['Tümü', 'Thermomix', 'Pilav Pişirici', ...kategoriler]
   sekmeler.innerHTML = butonlar.map((k) => `<button class="sekme" data-k="${k}">${k}</button>`).join('')
   sekmeler.onclick = (e) => { const b = e.target.closest('.sekme'); if (!b) return; secili = b.dataset.k; ciz() }
   arama.oninput = ciz
@@ -70,11 +70,11 @@ footer a{color:inherit}
     const q = sade(arama.value.trim())
     for (const b of sekmeler.children) b.classList.toggle('secili', b.dataset.k === secili)
     const g = tarifler.filter((t) =>
-      (secili === 'Tümü' || (secili === 'Thermomix' ? t.thermomix : t.kategori === secili)) &&
+      (secili === 'Tümü' || (secili === 'Thermomix' ? t.thermomix : secili === 'Pilav Pişirici' ? t.pisirici : t.kategori === secili)) &&
       (!q || sade(t.ad + ' ' + t.etiketler.join(' ') + ' ' + t.aciklama).includes(q)))
     liste.innerHTML = g.map((t) => `<a class="kart" href="${t.dosya}">
       <h2>${t.ad}</h2><p>${t.aciklama || ''}</p>
-      <div class="rozetler">${t.thermomix ? '<span class="rozet">Thermomix</span>' : ''}${t.kategori ? `<span class="rozet gri">${t.kategori}</span>` : ''}${t.sure ? `<span class="rozet gri">${t.sure} dk</span>` : ''}${t.porsiyon ? `<span class="rozet gri">${t.porsiyon}</span>` : ''}</div></a>`).join('')
+      <div class="rozetler">${t.thermomix ? '<span class="rozet" style="background:#e8f4ee;color:#2E7D5B">Thermomix</span>' : ''}${t.pisirici ? '<span class="rozet" style="background:#f7ece7;color:#8d523c">Pilav Pişirici</span>' : ''}${t.kategori ? `<span class="rozet gri">${t.kategori}</span>` : ''}${t.sure ? `<span class="rozet gri">${t.sure} dk</span>` : ''}${t.porsiyon ? `<span class="rozet gri">${t.porsiyon}</span>` : ''}</div></a>`).join('')
     bos.hidden = g.length > 0
     bos.textContent = tarifler.length ? 'Aramana uyan tarif yok.' : 'Henüz tarif yok. Uygulamadan “Siteye koy” deyince burada görünür.'
     sayi.textContent = tarifler.length ? `${g.length} tarif` : ''

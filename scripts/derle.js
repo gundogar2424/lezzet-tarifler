@@ -27,7 +27,8 @@ for (const dosya of fs.readdirSync(klasor).filter((d) => d.endsWith('.html')).so
     porsiyon: v.recipeYield || '',
     sure: v.totalTime ? Number(String(v.totalTime).replace(/\D/g, '')) || 0 : 0,
     yazar: v.author?.name || '',
-    thermomix: /thermomix/i.test(String(v.keywords || '')) ,
+    thermomix: /thermomix/i.test(String(v.keywords || '')),
+    pisirici: /pilav pişirici/i.test(String(v.keywords || '')),
     gorsel: Array.isArray(v.image) ? v.image[0] : v.image || '',
     tarih: tarihM ? tarihM[1] : st.mtime.toISOString().slice(0, 10)
   })
